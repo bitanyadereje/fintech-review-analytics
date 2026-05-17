@@ -35,10 +35,6 @@ fintech-review-analytics/
 │ └── schema.sql
 └── 
 
-text
-
----
-
 ## 🚀 Task 1 – Data Collection & Preprocessing
 
 ### Scraping
@@ -96,7 +92,6 @@ text
 - Saved final CSV: `data/final_analysis.csv` with columns:
   `review_id`, `review_text`, `sentiment_label`, `sentiment_score`, `identified_theme`
 
----
 
 ## 🗄️ Task 3 – PostgreSQL Database
 
@@ -116,10 +111,8 @@ The schema is defined in `scripts/schema.sql`.
 ### Verification Queries
 
 ```sql
--- Total reviews
 SELECT COUNT(*) FROM reviews;                          -- 1318
 
--- Reviews per bank
 SELECT b.bank_name, COUNT(r.review_id)
 FROM reviews r JOIN banks b ON r.bank_id = b.bank_id
 GROUP BY b.bank_name;
