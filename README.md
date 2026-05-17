@@ -116,3 +116,43 @@ SELECT COUNT(*) FROM reviews;                          -- 1318
 SELECT b.bank_name, COUNT(r.review_id)
 FROM reviews r JOIN banks b ON r.bank_id = b.bank_id
 GROUP BY b.bank_name;
+
+
+## Task 4 – Insights & Recommendations
+
+### Visualizations
+
+I created three plots to communicate key findings:
+
+- `sentiment_by_bank.png` – stacked bar chart showing positive vs negative reviews per bank.
+- `rating_boxplot.png` – boxplot of ratings (1–5) for each bank.
+- `themes_by_bank.png` – stacked bar of theme frequencies (excluding generic "Other").
+
+All plots have titles, labeled axes, and are referenced in the final report.
+
+### Key Insights
+
+**Satisfaction drivers** (from positive reviews):
+- Easy UI, fast transfers, reliable OTP delivery.
+
+**Pain points** (from negative reviews + themes):
+- CBE: transfer delays, occasional crashes.
+- BOA: login failures, confusing UI.
+- Dashen: slow performance, OTP issues.
+
+### Recommendations per Bank
+
+- **CBE** – Optimise transfer backend; add transaction progress indicator.
+- **BOA** – Simplify login flow; implement biometric fallback.
+- **Dashen** – Improve crash recovery; promote Amole features with better onboarding.
+
+### Final Report
+
+The final report (`final_report.pdf`) is written in Medium‑blog style, ≤15 pages, with ≤15 plots. It includes:
+- Executive summary
+- Data collection & quality
+- Sentiment & thematic analysis results
+- Database design overview
+- Insights, visualisations, bank‑specific recommendations
+- Ethical considerations and limitations
+- Next steps
