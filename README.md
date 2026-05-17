@@ -108,16 +108,6 @@ The schema is defined in `scripts/schema.sql`.
 - Connection parameters: localhost, port 5432, database `bank_reviews`, user `postgres`.
 - Inserted **1,318 reviews** successfully.
 
-### Verification Queries
-
-```sql
-SELECT COUNT(*) FROM reviews;                          -- 1318
-
-SELECT b.bank_name, COUNT(r.review_id)
-FROM reviews r JOIN banks b ON r.bank_id = b.bank_id
-GROUP BY b.bank_name;
-
-
 ## Task 4 – Insights & Recommendations
 
 ### Visualizations
@@ -156,3 +146,5 @@ The final report (`final_report.pdf`) is written in Medium‑blog style, ≤15 p
 - Insights, visualisations, bank‑specific recommendations
 - Ethical considerations and limitations
 - Next steps
+
+
