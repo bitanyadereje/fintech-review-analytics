@@ -1,0 +1,14 @@
+﻿google-play-scraper
+pandas
+numpy
+spacy
+textblob
+vaderSentiment
+transformers
+torch
+scikit-learn
+psycopg2-binary
+sqlalchemy
+matplotlib
+seaborn
+pytest
