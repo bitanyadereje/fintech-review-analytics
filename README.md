@@ -17,25 +17,9 @@ We scraped 450+ reviews per bank (1,318 total), performed sentiment analysis usi
 
 ---
 
-## 🗂️ Repository Structure
-fintech-review-analytics/
-├── .github/workflows/ # CI/CD (pytest on push)
-├── .gitignore # ignores data/, *.csv, venv/
-├── requirements.txt # Python dependencies
-├── README.md # this file
-├── data/ # CSV files (not committed)
-├── scripts/ # all Python scripts
-│ ├── scrape_full.py
-│ ├── preprocess.py
-│ ├── sentiment_analysis.py
-│ ├── thematic_analysis.py
-│ ├── aggregate_sentiment.py
-│ ├── create_final_csv.py
-│ ├── insert_db.py
-│ └── schema.sql
-└── 
 
-## 🚀 Task 1 – Data Collection & Preprocessing
+
+##  Task 1 – Data Collection & Preprocessing
 
 ### Scraping
 
@@ -59,7 +43,7 @@ fintech-review-analytics/
 
 ---
 
-## 🧠 Task 2 – Sentiment & Thematic Analysis
+##  Task 2 – Sentiment & Thematic Analysis
 
 ### Sentiment Analysis
 
@@ -93,7 +77,7 @@ fintech-review-analytics/
   `review_id`, `review_text`, `sentiment_label`, `sentiment_score`, `identified_theme`
 
 
-## 🗄️ Task 3 – PostgreSQL Database
+##  Task 3 – PostgreSQL Database
 
 ### Schema
 
